@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byhack Shop 2023</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="blur"></div>
+    <div id="container">
+      <div class="shop-main">
+        <i
+          onclick="Exit()"
+          id="exit"
+          class="fa-solid fa-right-from-bracket fa-lg"
+        ></i>
+        <a id="shop-title">Shops</a>
+        <div class="pay-main">
+          <div class="pay-section">
+            <p id="pay-empty-title">Sanırım sepetiniz boş gözüküyor...</p>
+          </div>
+        </div>
+        <div class="page all"></div>
+        <div class="shopping-cart">
+          <p>Toplam: <a id="shopping-cart-price">$15000</a></p>
+          <button onclick="Buy()">Buy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

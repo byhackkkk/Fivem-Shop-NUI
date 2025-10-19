@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background: none;
+}
+#blur {
+  display: none;
+}
+
+.shop-main {
+  position: absolute;
+  border: 0vh solid #f9f7f7;
+  height: 80vh;
+  width: 160vh;
+  left: 15vh;
+
+  top: 10vh;
+  transition: 1s ease-in-out;
+  background: #0e1012;
+}
+#shop-title {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vh;
+  left: 58vh;
+  top: 5vh;
+  color: rgba(255, 255, 255, 0.749);
+}
+.pay-main {
+  position: absolute;
+  height: 80vh;
+  width: 38vh;
+  left: 122vh;
+  border-left: 0.1vh solid rgba(248, 244, 236, 0.03);
+}
+
+.page {
+  position: absolute;
+  overflow: scroll;
+  display: flex;
+  width: 112vh;
+  height: 62vh;
+  border: 0.1vh solid rgba(248, 244, 236, 0.03);
+  left: 5vh;
+  top: 15vh;
+  flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+  width: 0vh;
+}
+
+.shopping-product {
+  position: relative;
+  width: 25vh;
+  height: 30vh;
+  margin: 1.5vh;
+  background: #282b322e;
+  border: 0vh solid #31373f;
+  border-radius: 2.5vh;
+  text-align: center;
+}
+
+#price {
+  position: absolute;
+  opacity: 0; /* Başlangıçta yazıyı gizle */
+  transition: opacity 0.7s ease-in-out;
+  top: 20.7vh;
+  height: 2vh;
+  width: 18vh;
+  text-align: center;
+
+  color: #28b369;
+  font-family: "Roboto", sans-serif;
+  left: 3.4vh;
+  font-size: 1.7vh;
+}
+.shopping-product:hover #price {
+  position: absolute;
+  opacity: 1;
+}
+
+.shopping-product:hover #btnBuy {
+  position: absolute;
+
+  opacity: 1;
+}
+
+.shopping-product #btnBuy {
+  opacity: 0; /* Başlangıçta yazıyı gizle */
+  transition: opacity 0.7s ease-in-out;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #64e687ee;
+  background: #64e687;
+  color: white;
+  padding: 0.35vh;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  padding-left: 2.25vh;
+  padding-right: 2.25vh;
+  font-size: 1.5vh;
+  cursor: pointer;
+  left: 18.8vh;
+  top: 26.9vh;
+  border-top-left-radius: 1.1vh;
+  border-bottom-right-radius: 5vh;
+  text-align: center;
+}
+.shopping-product img {
+  position: absolute;
+  left: 4vh;
+  top: 1vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 17vh;
+  width: 17vh;
+  object-fit: cover;
+}
+
+.shopping-product #name {
+  position: absolute;
+  top: 26.5vh;
+  left: 0vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #3d3b4015;
+  padding: 0.35vh;
+  padding-top: 0.8vh;
+  padding-bottom: 0.8vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-size: 1.6vh;
+  border-bottom-left-radius: 5vh;
+  border-top-right-radius: 1.1vh;
+  text-align: center;
+}
+
+.pay-section {
+  position: absolute;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  border-top: 0.1vh solid rgba(248, 244, 236, 0.03);
+  border-bottom: 0.1vh solid rgba(248, 244, 236, 0.03);
+  height: 45vh;
+  width: 37.5vh;
+  top: 18vh;
+}
+
+#pay-empty-title {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.749);
+  top: 15vh;
+  left: 6vh;
+  font-size: 1.6vh;
+}
+
+.pay {
+  position: relative;
+  width: 35vh;
+  height: 6.8vh;
+  margin: 0.8vh;
+  background: #282b321e;
+  border: 0vh solid #31373f;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease; /* Geçiş efektini tanımla */
+}
+.pay:hover {
+  box-shadow: 0 0 1vh 0.2vh rgba(255, 0, 0, 0.4);
+}
+#pay-name {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1.7vh;
+  top: 2.2vh;
+  left: 1.5vh;
+}
+
+#pay-price {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6vh;
+  top: 2.2vh;
+  height: 3vh;
+  width: 10vh;
+  text-align: right;
+  left: 23.6vh;
+  color: #28b369;
+}
+
+#pay-amount {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3vh;
+  top: 2.5vh;
+  color: white;
+  left: 17vh;
+}
+
+.shopping-cart {
+  position: absolute;
+
+  top: 63vh;
+  right: 1.5vh;
+  height: 10vh;
+  width: 35vh;
+}
+
+.shopping-cart p {
+  position: absolute;
+  top: -0.5vh;
+  height: 1.5vh;
+  width: 20vh;
+  left: 0vh;
+  text-align: left;
+  transition: 0.4s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vh;
+  color: rgba(255, 255, 255, 0.749);
+}
+
+.shopping-cart a {
+  color: #28b369;
+}
+
+.shopping-cart button {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #64e687;
+  background: transparent;
+  color: #64e687;
+  padding: 0.35vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+
+  padding-left: 3.75vh;
+  padding-right: 3.75vh;
+  font-size: 1.9vh;
+  cursor: pointer;
+  margin-left: 12vh;
+  margin-top: 8.5vh;
+  border-radius: 0.4vh;
+  text-align: center;
+}
+
+.shopping-cart button:hover {
+  background: #64e687;
+  color: white;
+}
+
+#exit {
+  position: absolute;
+  z-index: 111;
+  top: 4vh;
+  left: 155vh;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.749);
+}
+
+#exit:hover {
+  color: rgba(255, 8, 8, 0.847);
+}
